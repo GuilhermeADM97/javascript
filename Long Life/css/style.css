@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "PlayFair";
+    src: url(../fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+:root {
+    --color-background: #a026f7;
+    --color-text:#ededed;
+
+    --fontPadrao: "PlayFair", "Rubik", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: var(--fontPadrao);
+    color: var(--color-text);
+    background: var(--color-background);
+}
+
+/* cabecalho */
+
+.header {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 10%;
+    background: var(--color-background);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+
+    position: relative;
+    font-size: 25px;
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+}
+
+.navbar a {
+
+    display: inline-block;
+    font-size: 25px;
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover {
+
+    color: black;
+}
+
+.navbar a.active {
+
+    text-decoration: underline;
+}
